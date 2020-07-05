@@ -1,0 +1,59 @@
+{
+  "id": "E1AKN77B3JL1QN",
+  "arn": "arn:aws:cloudfront::320722226344:distribution/E1AKN77B3JL1QN",
+  "url": "https://d5muebikm8b2j.cloudfront.net",
+  "region": "us-east-1",
+  "origins": [
+    {
+      "url": "http://ufakmym-21izkep.s3.amazonaws.com",
+      "private": true,
+      "pathPatterns": {
+        "_next/static/*": {
+          "ttl": 86400
+        },
+        "static/*": {
+          "ttl": 86400
+        },
+        "api/*": {
+          "ttl": 0,
+          "allowedHttpMethods": [
+            "HEAD",
+            "DELETE",
+            "POST",
+            "GET",
+            "OPTIONS",
+            "PUT",
+            "PATCH"
+          ],
+          "lambda@edge": {
+            "origin-request": "arn:aws:lambda:us-east-1:320722226344:function:ufakmym-eovam5m:12"
+          }
+        },
+        "_next/data/*": {
+          "ttl": 0,
+          "allowedHttpMethods": [
+            "HEAD",
+            "GET"
+          ],
+          "lambda@edge": {
+            "origin-request": "arn:aws:lambda:us-east-1:320722226344:function:ufakmym-z4wowbl:12"
+          }
+        }
+      }
+    }
+  ],
+  "defaults": {
+    "ttl": 0,
+    "forward": {
+      "cookies": "all",
+      "queryString": true
+    },
+    "allowedHttpMethods": [
+      "HEAD",
+      "GET"
+    ],
+    "lambda@edge": {
+      "origin-request": "arn:aws:lambda:us-east-1:320722226344:function:ufakmym-z4wowbl:12"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ufakmym-z4wowbl",
+  "hash": "cSWJivHsLB0A9Fz8TW3Tv0vNjxJcvUiLwtPpjgPm190=",
+  "description": "Default Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "C:\\Users\\user\\Documents\\React\\yellow-signs-app\\yellow-signs-app\\.serverless_nextjs\\default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs12.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::320722226344:role/ufakmym-wvi0v6"
+  },
+  "arn": "arn:aws:lambda:us-east-1:320722226344:function:ufakmym-z4wowbl",
+  "region": "us-east-1"
+}

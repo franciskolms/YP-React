@@ -1,0 +1,12 @@
+{
+  "name": "ufakmym-wvi0v6",
+  "arn": "arn:aws:iam::320722226344:role/ufakmym-wvi0v6",
+  "service": [
+    "edgelambda.amazonaws.com",
+    "lambda.amazonaws.com"
+  ],
+  "policy": {
+    "arn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  },
+  "region": "us-east-1"
+}
